@@ -1,0 +1,86 @@
+.background-image{
+    width: 1800px;
+    height: 1100px;
+    margin: auto;
+    background-image: url(../images/wp7227935background.webp);
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.planet{
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    position: absolute;
+    background-image: url(../images/planet.svg);
+    animation-name: planeta;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+}
+.minion-space{
+    width: 300px;
+    height: 295px;
+    background-image: url(../images/space-minionimages-removebg-preview.png);
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation-name: minion;
+    animation-duration: 10s;
+    animation-timing-function: linear; 
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+}
+.alien{
+    width: 300px;
+    height: 250px;
+    background-image: url(../images/alien-spaceship.webp);
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation-name: alien-spaceship;
+    animation-duration: 10s;
+    animation-timing-function: linear; 
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+    animation-direction: reverse;
+}
+.Our-earth{
+    width: 100px;
+    height: 100px;
+    background-image: url(../images/planet-earth.svg);
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation-name: earth;
+    animation-duration: 10s;
+    animation-timing-function: linear; 
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+}
+
+@keyframes minion {
+    0% {top: 0px; left: 0px; transform: rotate(20deg);}
+    20% {top: 10px; left: 300px; transform: rotate(30deg);}
+    80% {top: 10px; left: 1820px;}
+  }
+@keyframes alien-spaceship {
+    0% {top:400px; left:0px; transform: rotate(10deg);}
+    20%{top: 250px; left: 400px; transform: rotate(30deg);}
+    40%{top: 250px; left: 700px;}
+    60%{top: 250px; left: 1100px;}
+    80%{top: 250px; left: 1400px;}
+    100% {top: 200px; left: 1820px;}
+}
+@keyframes planeta {
+    from {left:0px; bottom: 40px; transform: rotate(20deg);}
+    to {bottom:40px; transform: rotate(80deg); left: 1800px;}
+}
+@keyframes earth {
+    0% {top: 450px; left:0px;}
+    20%{top: 500px; left: 400px; transform: rotate(30deg);}
+    40%{top: 550px; left: 700px; transform: rotate(35deg);}
+    60%{top:600px; left:1000px; transform: rotate(40deg);}
+    100%{top:500px; left: 1800px; transform: rotate(50deg);}
+}
